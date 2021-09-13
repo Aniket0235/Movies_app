@@ -1,3 +1,5 @@
+
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:movies_app/screens/add_movies.dart';
@@ -5,6 +7,7 @@ import 'package:movies_app/helpers/helpersfunctions.dart';
 import 'package:movies_app/screens/home_screen.dart';
 import 'package:movies_app/screens/logout.dart';
 import 'package:movies_app/widget/authenticate.dart';
+import 'package:movies_app/widget/forget_password.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,7 +53,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         LogOutScreen.routName: (context) => LogOutScreen(),
         AddMovies.routeName: (context) => AddMovies(),
-        MyHomePage.routeName: (context) => MyHomePage()
+        MyHomePage.routeName: (context) => MyHomePage(),
+        ForgetPassword.routeName:(context)=>ForgetPassword()
       },
     );
   }
